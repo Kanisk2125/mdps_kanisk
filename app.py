@@ -1,28 +1,12 @@
-# from utils import wrangle
-import os
+
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-# import sys
-# import path
 
-# diabetes_model = pd.read_csv(open('diabetes_model.csv','rb'))
-
-# heart_disease_model =pd.read_csv(open('heart_disease_model.csv','rb'))
-# parkinsons_model =pd.read_csv(open('parkinsons_model.csv','rb'))
 
 diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb'))
 heart_disease_model = pickle.load(open('heart_disease_model.pkl','rb'))
 parkinsons_model = pickle.load(open('parkinsons_model.pkl','rb'))
-# with open('diabetes_model.pkl', 'rb') as handle:
-#     diabetes_model = pickle.load(handle)
-
-# loading the saved models
-
-# diabetes_model = pickle.load(open(r'C:/Users/HP/OneDrive/Desktop/disease/diabetes_model.sav', 'rb'))
-# heart_disease_model = pickle.load(open(r'C:/Users/HP/OneDrive/Desktop/disease/heart_disease_model.sav','rb'))
-# parkinsons_model = pickle.load(open(r'C:/Users/HP/OneDrive/Desktop/disease/parkinsons_model.sav','rb'))
-
 
 
 # sidebar for navigation
